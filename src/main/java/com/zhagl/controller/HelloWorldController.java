@@ -12,14 +12,14 @@ import org.springframework.web.servlet.ModelAndView;
 @RestController
 @RequestMapping("/springboot")
 public class HelloWorldController {
-    //测试springboot项目是否调通，页面输入http://localhost:8080/say?name=123
+    //测试springboot项目是否调通，页面输入http://localhost:8080/springboot/say?name=123
     @RequestMapping(value = "/say", method = RequestMethod.GET)
     public String sayWorld(String name) {
         return "Hello " + name;
     }
 
     /**
-     * 测试加载html，页面输入http://localhost:8080/hi
+     * 测试加载html，页面输入http://localhost:8080/springboot/hi
      * hello.html里开始学习vue.js之旅
      * */
     @RequestMapping(value = "/hi", method = RequestMethod.GET)
