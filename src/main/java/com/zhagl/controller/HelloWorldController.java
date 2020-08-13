@@ -25,7 +25,7 @@ public class HelloWorldController {
     @RequestMapping(value = "/hi", method = RequestMethod.GET)
     public ModelAndView hello() {
         ModelAndView viewResult = new ModelAndView();
-        viewResult.setViewName("hello");
+        viewResult.setViewName("first");
         return viewResult;
     }
 }
