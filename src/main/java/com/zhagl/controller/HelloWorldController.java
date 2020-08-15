@@ -28,4 +28,17 @@ public class HelloWorldController {
         viewResult.setViewName("first");
         return viewResult;
     }
+
+    /**
+     * name:
+     * first
+     * second
+     * three
+     */
+    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    public ModelAndView test(String name) {
+        ModelAndView viewResult = new ModelAndView();
+        viewResult.setViewName(name);
+        return viewResult;
+    }
 }

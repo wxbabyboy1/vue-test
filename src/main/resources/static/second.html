@@ -4,5 +4,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <html lang="zh-CN">
+    <div id="app">
+        <p>{{ foo }}</p>
+        <!-- 这里的 `foo` 不会更新！ -->
+        <button v-on:click="foo = 'xxxx'">Change it</button>
+    </div>
 
+    <div id="app-rawHtml">
+        <p>Using mustaches: {{ rawHtml }}</p>
+        <p>Using v-html directive: <span v-html="rawHtml"></span></p>
+    </div>
+
+    <div id="app-seen">
+        <p v-if="seen">现在你看到我了</p>
+    </div>
 </html>

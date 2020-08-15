@@ -1,4 +1,5 @@
-﻿window.onload = function(){
+﻿//入门的介绍
+window.onload = function(){
     /**
      *采用简洁的模板语法来声明式地将数据渲染进 DOM 的系统
         <div id="app">
